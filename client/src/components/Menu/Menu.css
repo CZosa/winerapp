@@ -1,0 +1,35 @@
+.meal-menu-container {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-wrapper {
+  background-color: #fff8dc;
+  text-align: center;
+}
+
+.meal-menu-header {
+  font-family: 'Georgia';
+  padding-top: 6%;
+  font-size: 60px;
+  font-weight: lighter;
+  color: #d72d1d;
+}
+
+i.fa-hand-point-down {
+  margin-top: 8%;
+  font-size: 175px;
+  color: #d72d1d;
+}
+
+.cheese-menu-header {
+  margin-top: 3%;
+  font-size: 44px;
+  font-family: Tahoma, sans-serif;
+  color: #d72d1d;
+}
+
+.cheese-menu-container {
+  height: 560px;
+  margin-top: 2%;
+}

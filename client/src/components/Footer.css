@@ -1,0 +1,110 @@
+.solid-bar {
+  background-color: #864fdc;
+  height: 40px;
+}
+
+.footer {
+  margin-top: 15%;
+}
+
+.footer-content {
+  background-color: #2c2c34;
+  padding: 10px 65px 10px 65px;
+  border-radius: 20px 20px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content .section {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin: 5px;
+  padding: 15px;
+  width: 28%;
+  height: 32%;
+}
+
+.linebreak {
+  margin: 12px 0 23px 0;
+  height: 1px;
+  background-color: #3d4144;
+  border: none;
+}
+
+.footer-content .section p {
+  font-size: 15px;
+  color: #cdcece;
+}
+
+.footer-content .section span {
+  color: #cdcece;
+}
+
+.fa-envelope {
+  color: #cdcece;
+}
+
+.footer-content .section .fab {
+  font-size: 36px;
+  color: #595b5c;
+  margin-right: 15px;
+}
+
+i.fab.fa-linkedin:hover {
+  color: #2577b5;
+}
+
+i.fab.fa-github:hover {
+  color: white;
+}
+
+/* Mobile Devices */
+
+/* iPhone 6/7/8 */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .footer-content {
+    background-color: #2c2c34;
+    height: 0%;
+    padding: 10px 65px 10px 65px;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .footer-content .section {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    width: 194px;
+  }
+}
+
+/* iPhone 5 */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .footer-content {
+    background-color: #2c2c34;
+    height: 0%;
+    padding: 10px 65px 10px 65px;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .footer-content .section {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    width: 194px;
+  }
+
+  .fa-envelope {
+    display: none;
+  }
+}

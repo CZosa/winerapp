@@ -1,0 +1,68 @@
+.cheese-menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.charcuterie-image {
+  transform: rotate(250deg);
+}
+
+.charcuterie {
+  height: 600px;
+  z-index: 1;
+}
+
+/* Mobile Devices */
+
+/* iPhone X */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .charcuterie {
+    height: 311px;
+  }
+}
+
+/* iPad Pro */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+  .charcuterie {
+    height: 400px;
+  }
+}
+
+/* iPad Air*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .charcuterie {
+    height: 305px;
+  }
+}
+
+/* iPhone 6/7/8 */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .charcuterie {
+    height: 311px;
+    order: 1;
+  }
+
+  .cheese-selector {
+    order: 2;
+    width: 80%;
+  }
+
+  .cheese-submit {
+    margin-top: 3%;
+    width: 100%;
+    order: 3;
+  }
+}
+
+/* iPhone 5 */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .charcuterie {
+    height: 250px;
+  }
+
+  .cheese-submit {
+    margin-top: 3%;
+  }
+}

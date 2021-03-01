@@ -1,0 +1,339 @@
+section.banner {
+  background-color: #864fdc;
+  height: 835px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+svg.wave-banner {
+  display: block;
+}
+
+div.flex-image {
+  animation-name: go-right;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+img.red-wine {
+  height: 550px;
+}
+
+div.flex-text {
+  padding-bottom: 12%;
+  animation-name: go-left;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+p.banner-text {
+  color: white;
+  font-family: 'Questrial', sans-serif;
+  font-size: 48px;
+}
+
+@keyframes go-right {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: 20%;
+  }
+}
+
+@keyframes go-left {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: 20%;
+  }
+}
+
+section.description-wrapper {
+  margin-top: 15%;
+  height: 300px;
+}
+
+.flex-description {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-description li {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+  margin: 2%;
+  text-align: center;
+  border-radius: 24px;
+}
+
+.flex-description h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.icon {
+  display: block;
+  text-align: center;
+  font-size: 4em;
+  padding-top: 10%;
+}
+
+.utensil {
+  color: rgb(80, 181, 80);
+  font-size: 90px;
+}
+
+.bottle {
+  color: #d72d1d;
+  font-size: 120px;
+}
+
+.emoji {
+  color: dodgerblue;
+  font-size: 99px;
+}
+
+.flex-description span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  display: block;
+  padding-top: 15px;
+}
+
+/* Mobile Devices */
+
+/* iPhone X */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+  section.banner {
+    background-color: #864fdc;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  svg.wave-banner {
+    width: 102vw;
+    transform: translateX(-2px);
+  }
+
+  div.flex-image {
+    animation-name: null;
+    width: 28%;
+  }
+
+  img.red-wine {
+    height: 300px;
+  }
+
+  div.flex-text {
+    animation-name: null;
+    width: 45%;
+  }
+
+  p.banner-text {
+    color: white;
+    font-family: 'Questrial', sans-serif;
+    font-size: 19px;
+  }
+
+  section.description-wrapper {
+    margin-top: 15%;
+    height: 770px;
+  }
+
+  .flex-description li {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 18px;
+    margin: 2%;
+    width: 58%;
+    text-align: center;
+  }
+}
+
+/* iPad Pro */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+  div.flex-image {
+    animation-name: null;
+    padding-left: 14%;
+  }
+
+  svg.wave-banner {
+    width: 102vw;
+    transform: translateX(-2px);
+  }
+
+  img.red-wine {
+    height: 420px;
+  }
+
+  div.flex-text {
+    animation-name: null;
+    padding-right: 9%;
+    width: 40%;
+  }
+
+  p.banner-text {
+    color: white;
+    font-family: 'Questrial', sans-serif;
+    font-size: 38px;
+  }
+
+  section.description-wrapper {
+    margin-top: 15%;
+    height: 300px;
+  }
+
+  .flex-description li {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 18px;
+    margin: 2%;
+    width: 24%;
+    text-align: center;
+  }
+}
+
+/* iPad Air */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  div.flex-image {
+    animation-name: null;
+  }
+
+  div.flex-text {
+    animation-name: null;
+  }
+
+  svg.wave-banner {
+    width: 102vw;
+    transform: translateX(-2px);
+  }
+
+  section.description-wrapper {
+    margin-top: 15%;
+    height: 0%;
+  }
+
+  .flex-description li {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 18px;
+    margin: 2%;
+    width: 24%;
+    text-align: center;
+  }
+}
+
+/* iPhone 6, 7, 8 */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  section.banner {
+    background-color: #864fdc;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  svg.wave-banner {
+    width: 102vw;
+    transform: translateX(-2px);
+  }
+
+  div.flex-image {
+    animation-name: null;
+  }
+
+  img.red-wine {
+    height: 300px;
+  }
+
+  div.flex-text {
+    animation-name: null;
+  }
+
+  p.banner-text {
+    color: white;
+    font-family: 'Questrial', sans-serif;
+    font-size: 34px;
+  }
+
+  section.description-wrapper {
+    margin-top: 15%;
+    height: 0%;
+  }
+}
+
+/* iPhone 5 */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  section.banner {
+    background-color: #864fdc;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  svg.wave-banner {
+    width: 102vw;
+    transform: translateX(-2px);
+  }
+
+  div.flex-image {
+    animation-name: null;
+  }
+
+  img.red-wine {
+    height: 300px;
+  }
+
+  div.flex-text {
+    animation-name: null;
+  }
+
+  p.banner-text {
+    color: white;
+    font-family: 'Questrial', sans-serif;
+    font-size: 34px;
+  }
+
+  section.description-wrapper {
+    margin-top: 15%;
+    height: 0%;
+  }
+
+  .flex-description li {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 18px;
+    margin: 2%;
+    width: 58%;
+    text-align: center;
+  }
+
+  .utensil {
+    color: rgb(80, 181, 80);
+    font-size: 76px;
+  }
+
+  .bottle {
+    color: #d72d1d;
+    font-size: 95px;
+  }
+
+  .emoji {
+    color: dodgerblue;
+    font-size: 85px;
+  }
+}
